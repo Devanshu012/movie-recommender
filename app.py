@@ -6,7 +6,7 @@ import os
 
 # Loading the similarity.pkl file from the Google drive
 
-url = "https://drive.google.com/file/d/1sBN2sBzI68blXI2ibmfd1bPkuRXl6Q5-/view?usp=sharing"
+url = "https://drive.google.com/uc?id=1sBN2sBzI68blXI2ibmfd1bPkuRXl6Q5-"
 if not os.path.exists('similarity.pkl'):
     url = 'https://drive.google.com/uc?id=YOUR_SIMILARITY_FILE_ID'
     gdown.download(url, 'similarity.pkl', quiet=False)

@@ -6,9 +6,9 @@ import os
 
 # Loading the similarity.pkl file from the Google drive
 
-url = "https://drive.google.com/uc?id=1sBN2sBzI68blXI2ibmfd1bPkuRXl6Q5-"
+
 if not os.path.exists('similarity.pkl'):
-    url = 'https://drive.google.com/uc?id=YOUR_SIMILARITY_FILE_ID'
+    url = "https://drive.google.com/uc?id=1sBN2sBzI68blXI2ibmfd1bPkuRXl6Q5-"
     gdown.download(url, 'similarity.pkl', quiet=False)
 
 movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
